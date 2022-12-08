@@ -1,7 +1,7 @@
 /* main content */
 #hero {
   height: 800px;
-  background: url("/images/places/queenstown-new-zealand-luxury-accommodation.jpeg")
+  background: url("images/places/queenstown-new-zealand-luxury-accommodation.jpeg")
     center / cover;
   /* background-size: cover; */
 }
@@ -84,8 +84,5 @@
 }
 .destination strong {
   color: rgb(0,160,117);
-}
-footer li a img {
-  filter: invert();
 }
 
