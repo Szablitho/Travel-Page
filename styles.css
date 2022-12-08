@@ -1,0 +1,91 @@
+/* main content */
+#hero {
+  height: 800px;
+  background: url("/images/places/queenstown-new-zealand-luxury-accommodation.jpeg")
+    center / cover;
+  /* background-size: cover; */
+}
+#hero-content {
+  max-width: 900px;
+  background-color: rgb(51, 47, 47, 0.8);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+}
+#hero-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+#hero-content a,
+#hero-content p {
+  font-size: 24px;
+}
+#hero-content p {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+#hero-content a {
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: rgb(255, 251, 0);
+  color: black;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+#hero-content a:hover {
+  background-color: rgb(255, 238, 0);
+}
+#highlights {
+  padding: 24px;
+  background: linear-gradient(0deg, rgb(227,255,253) 30%, rgb(178, 237, 255));
+}
+#highlights h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: rgb(59,65,64);
+  text-align: center;
+  margin: 24px 0;
+}
+#destinations {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.destination {
+  margin: 0 20px;
+}
+.destination img {
+  height: 200px;
+  /* within flex box width 100% on each image make them be in ratio 1:3 and resizable */
+  width: 100%;
+  box-shadow: 2px 4px 8px rgb(68,67,67);
+  border-radius: 10px;
+  object-fit: cover;
+}
+.destination p {
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(124,123,123);
+  font-size: 24px;
+  margin: 20px 0;
+
+}
+.destination strong {
+  color: rgb(0,160,117);
+}
+footer li a img {
+  filter: invert();
+}
+
