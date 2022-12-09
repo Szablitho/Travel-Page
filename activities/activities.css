@@ -1,6 +1,6 @@
 #hero {
   height: 400px;
-  background: url("/images/places/Hamilton/Hamilton.jfif")
+  background: url("../images/places/Hamilton/Hamilton.jfif")
     center / cover;
   /* background-size: cover; */
 }
