@@ -85,4 +85,10 @@
 .destination strong {
   color: rgb(0,160,117);
 }
+@media screen and (max-width: 750px) {
+  #destinations {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
