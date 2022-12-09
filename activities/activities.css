@@ -1,0 +1,89 @@
+#hero {
+  height: 400px;
+  background: url("/images/places/Hamilton/Hamilton.jfif")
+    center / cover;
+  /* background-size: cover; */
+}
+#hero-content {
+  max-width: 900px;
+  background-color: rgb(51, 47, 47, 0.7);
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border-radius: 8px;
+  text-align: center;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+#hero-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: Raleway, sans-serif;
+  margin: 0;
+}
+#hero-content a,
+#hero-content p {
+  font-size: 24px;
+}
+#hero-content p {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+#hero-content a {
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: rgb(255, 251, 0);
+  color: black;
+  border-radius: 8px;
+  font-weight: 700;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+}
+#hero-content a:hover {
+  background-color: rgb(255, 238, 0);
+}
+#activities-container {
+  padding: 24px;
+  background: linear-gradient(0deg, rgb(227,255,253) 30%, rgb(207, 244, 255));
+}
+#activities-container h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: rgb(59,65,64);
+  text-align: center;
+  margin: 24px 0;
+}
+#activities-container h3 {
+  text-align: center;
+  margin: 10px;
+  color: rgb(0,160,117);
+}
+.activity {
+  background: linear-gradient(135deg,rgb(233, 233, 233),white);
+  box-shadow: inset 1px 1px 3px rgb(179, 179, 179);
+  text-align: center;
+}
+.activity p {
+  padding: 0 30px;
+  margin: 10px auto 30px;
+  max-width: 80vw;
+  padding-bottom: 10px;
+}
+.activity img {
+  max-width: 100%;
+}
+/* adjusting main picture responsivity */
+@media screen and (max-width: 790px) {
+  #hero-content {
+    padding: 20px 0;
+    top: 150px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #hero-content {
+    padding: 10px 0;
+    top: 190px;
+  }
+}

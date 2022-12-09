@@ -68,7 +68,7 @@ header ul li a:hover {
     color: rgb(77,77,77);
     background-color: rgb(255,251,0);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 790px) {
     header { display: block;
      text-align: center;
     }

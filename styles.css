@@ -3,7 +3,6 @@
   height: 800px;
   background: url("images/places/queenstown-new-zealand-luxury-accommodation.jpeg")
     center / cover;
-  /* background-size: cover; */
 }
 #hero-content {
   max-width: 900px;
