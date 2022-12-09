@@ -67,12 +67,25 @@
 }
 .activity p {
   padding: 0 30px;
-  margin: 10px auto 30px;
+  margin: 10px auto;
   max-width: 80vw;
-  padding-bottom: 10px;
 }
 .activity img {
   max-width: 100%;
+}
+.activity-details {
+  padding: 20px;
+}
+.activity-details a {
+  padding: 8px 15px;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  background-color: rgb(255, 251, 0);
+  border-radius: 8px;
+  text-decoration: none;
+  color: black;
+}
+.activity-details a:hover {
+  background-color: rgb(255, 238, 0);
 }
 /* adjusting main picture responsivity */
 @media screen and (max-width: 790px) {
@@ -85,5 +98,14 @@
   #hero-content {
     padding: 10px 0;
     top: 190px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .activity {
+    display: grid;
+    grid-template-columns: 300px 1fr 200px;
+    width: 90vw;
+    margin: 0 auto;
+    align-items: center;
   }
 }
