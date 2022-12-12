@@ -5,9 +5,16 @@ body {
 header {
   position: static;
 }
+header nav ul li a:hover {
+  background-color: rgb(235, 253, 255);
+  color: rgb(22, 211, 228);
+}
+#page-logo a, header nav ul li a {
+  color: rgb(183,230,235);
+}
 main ul {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
@@ -28,8 +35,6 @@ main li:nth-of-type(3)  {
 main li img {
   width: 300px;
   height: 350px;
-  /* that make images not equal, bruh */
-  /* height: 280px; */
   object-fit: cover;
 }
 .item-content {
@@ -75,7 +80,7 @@ main li img {
   background-color: rgb(235, 253, 255);
 }
 .actions a::after {
-  content: " ➡";
+  content: " \279D";
   color: rgb(22, 211, 228);
 }
 /* mobile view adjustement */
