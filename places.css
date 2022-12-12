@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(40deg, rgb(77,77,77), rgb(58,58,58) );
+  color: rgb(68, 68, 68);
+}
+header {
+  position: static;
+}
+main ul {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 20px;
+}
+main li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  /* overflow helps to uncover rounded corners of parent element */
+  overflow: hidden;
+  max-width: 600px;
+}
+main li:nth-of-type(3)  {
+  grid-column: 1/3;
+  max-width: 100%;
+}
+main li img {
+  width: 300px;
+  height: 350px;
+  /* that make images not equal, bruh */
+  /* height: 280px; */
+  object-fit: cover;
+}
+.item-content {
+  padding: 24px;
+  font-weight: 700;
+}
+
+.item-content h2 {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.item-content p {
+  margin-bottom: 0;
+}
+/* placing card content plus additional div in html */
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.actions {
+  align-self: flex-end;
+}
+
+/* alternate solution for placing Explore button on right bottom without additinal div */
+/* .item-content {
+  position: relative;
+}
+.actions {
+  position: absolute;
+  bottom: 20px;
+  right:20px;
+} */
+
+.actions a {
+  color:rgb(22, 211, 228);
+  padding: 3px 2px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.actions a:hover {
+  background-color: rgb(235, 253, 255);
+}
+.actions a::after {
+  content: " ➡";
+  color: rgb(22, 211, 228);
+}
+/* mobile view adjustement */
+@media screen and (max-width: 750px) {
+  main li {
+    flex-direction: column;
+  }
+  main li img {
+    width: 100%;
+  }
+}
+/* dekstop adjustement when card is shrinking */
+@media screen and (max-width: 1200px) {
+  main ul {
+    display: flex;
+    flex-direction: column;
+  }
+  main ul li:nth-of-type(n) {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
