@@ -60,10 +60,17 @@
   margin: 10px;
   color: rgb(0,160,117);
 }
+#activities-list {
+  margin: 0 auto;
+}
 .activity {
   background: linear-gradient(135deg,rgb(233, 233, 233),white);
   box-shadow: inset 1px 1px 3px rgb(179, 179, 179);
   text-align: center;
+  margin: 20px auto 0;
+  width: 75vw;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .activity p {
   padding: 0 30px;
@@ -71,7 +78,8 @@
   max-width: 80vw;
 }
 .activity img {
-  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .activity-details {
   padding: 20px;
@@ -87,26 +95,33 @@
 .activity-details a:hover {
   background-color: rgb(255, 238, 0);
 }
-/* adjusting main picture responsivity */
-@media screen and (max-width: 790px) {
-  #hero-content {
-    padding: 20px 0;
-    top: 150px;
-  }
-}
-@media screen and (max-width: 750px) {
+/* adjusting main picture responsivity on PC */
+@media screen and (min-width: 320px) {
   #hero-content {
     padding: 10px 0;
     top: 190px;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 450px) {
+  #hero-content {
+    padding: 20px 0;
+    top: 150px;
+  }
+}
+
+@media screen and (min-width: 940px) {
   .activity {
     display: grid;
     grid-template-columns: 300px 1fr 200px;
-    width: 90vw;
+    width: 80vw;
     margin: 0 auto;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activity {
+    grid-template-columns: 300px 1fr 200px;
+    max-width: 1200px;
   }
 }
